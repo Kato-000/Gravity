@@ -5,7 +5,6 @@ function getValue() {
     var weight = parseFloat(value); // 変数をローカルに宣言
     if(weight){
         sessionStorage.setItem("weight", weight); // 値を sessionStorage に保存
-        location.href = 'measuring.html';
     } else {
         alert("体重を入力してください！")
         location.href = 'measuring.html';
