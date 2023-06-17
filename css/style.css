@@ -4,9 +4,10 @@ html{
     background-color: #FFECA4;
 }
 h1.out{
+  vertical-align:top;
   color: #DB98F5;
   text-align: center;
-  font-size: 6em;
+  font-size: 4em;
 }
 h1.measuring{ 
   color: #DB98F5;
@@ -54,11 +55,6 @@ a.btn--yellow {
   letter-spacing: 0.1em;
   color: #212529;
   border-radius: 0.5rem;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  
 }
 
 input{
@@ -100,6 +96,42 @@ p.rightpart{
   bottom: 42%;
   font-size: 2em;
 }
-h1.out{
-  
+
+.box {
+  height: 800x;
+      background-color: #fffeb09c;
+      border: 10px solid #FFD396;
+      margin: 100px 50px;
+      position: absolute;
+      
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  }
+.exp{
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: inline-block;
+}
+.btnstart{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btnhome{
+  margin-bottom: 20px;
+  margin-left:auto;
+  display: inline-block;
+}
+.btnretry{
+  margin-bottom: 20px;
+  margin-left:auto;
+  display: inline-block;
 }
