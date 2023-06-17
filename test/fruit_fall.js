@@ -36,7 +36,7 @@ function backgroundTree() {
 function createFallingImage() {
     backgroundTree();
     var image = new Image();
-    image.src = '../img/apple.jpg';
+    image.src = '../img/pineapple.jpg';
     image.classList.add('apple');
     
     var windowWidth  = window.innerWidth;
