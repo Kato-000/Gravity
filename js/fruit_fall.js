@@ -78,7 +78,8 @@ function wait(delay) {
 
 window.addEventListener('DOMContentLoaded', async function() {
     var imageCount = Quantity; // 落下させる画像の数
-    var i = 0, n = 0;
+
+
     for(;;){
         for (; i < imageCount; i++) {
             createFallingImage();
