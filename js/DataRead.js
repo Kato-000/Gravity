@@ -1,13 +1,7 @@
-let FruitsName = ["りんご"];
-let FruitsWeight = [300];
-let FruitsException = ["りんごです。"];
+var data = JSON.parse(Fruites);
 
-// fetch('../Data/FruitsData.csv')
-//   .then(response => response.text())
-//   .then(csvData => {
-//     print(csvData);
-//     // CSVデータを処理するコードをここに記述する
-//   })
-//   .catch(error => {
-//     console.error('CSVファイルの読み込みエラー:', error);
-//   });
+var i = Math.floor(Math.random() * 2) + 1;
+
+var FruitesName = data["A" + i].name;
+var FruitesWeight = data["A" + i].weight;
+var FruitesImg = data["A" + i].img;
