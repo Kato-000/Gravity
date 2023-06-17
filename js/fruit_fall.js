@@ -17,7 +17,9 @@ function createFallingImage() {
     
     document.body.appendChild(image);
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
-    var speed = Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
+    var speed;
+    if (Quantity < 1000) speed = Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
+    else speed = Math.random() * 25 + 10;
     var randonNum = Math.random() * 100 - 200
 
     
@@ -46,9 +48,6 @@ function wait(delay) {
 }
 
 window.addEventListener('DOMContentLoaded', async function() {
-    //var imageCount = Quantity; // 落下させる画像の数
-
-
     for(;;){
         for (; i < Quantity; i++) {
             createFallingImage();
