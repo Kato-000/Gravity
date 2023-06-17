@@ -40,7 +40,7 @@ a.btn--yellow {
   color: #212529;
   border-radius: 0.5rem;
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
   
@@ -70,4 +70,18 @@ a.btn--yellow:hover {
   color: #000;
   background: #fff20a;
   border-bottom: 2px solid #ccc100;
+}
+p.leftpart{
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  bottom: 42%;
+  font-size: 2em;
+}
+p.rightpart{
+  position: absolute;
+  right: 22%;
+  transform: translateX(-50%);
+  bottom: 42%;
+  font-size: 2em;
 }
