@@ -7,16 +7,23 @@ h1{
     color: #DB98F5;
     text-align: center;
     font-size: 6em
+    
 }
-p{
-    text-align: center;
+p.mainparts{
+  height:100px;
+  width: 200px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
     color:#9460A8;
 }
 a.btn--yellow {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.5;
-  position: relative;
   display: inline-block;
   padding: 1rem 4rem;
   cursor: pointer;
@@ -32,12 +39,15 @@ a.btn--yellow {
   letter-spacing: 0.1em;
   color: #212529;
   border-radius: 0.5rem;
-  position:absolute;
-	bottom: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   
 }
 
 input{
+  text-align: center;
   height:100px;
   width: 200px;
   margin: auto;
@@ -46,6 +56,7 @@ input{
   left: 0;
   right: 0;
   bottom: 0;
+  font-size: 4em;
 }
 
 a.btn--yellow {
@@ -59,9 +70,4 @@ a.btn--yellow:hover {
   color: #000;
   background: #fff20a;
   border-bottom: 2px solid #ccc100;
-}
-p.mainparts{
- font-size:2em;
- width: 10em;
- max-width: 100%;
 }
