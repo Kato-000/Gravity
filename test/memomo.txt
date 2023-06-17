@@ -1,21 +1,72 @@
 function createFallingImage() {
     var image = new Image();
-    image.src = 'fruit_apple.jpg';
-    image.classList.add('fruit_apple');
+    image.src = 'apple.png';
+    image.classList.add('apple');
     
     var windowWidth = window.innerWidth;
     var imageWidth = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな幅を設定
     
     image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)) + 'px'; // ランダムな水平位置を設定
-    image.style.animationDuration = Math.floor(Math.random() * 5) + 5 + 's'; // 5から10秒の間でランダムな落下速度を設定
     
     document.body.appendChild(image);
     
-    image.addEventListener('animationend', function() {
-      document.body.removeChild(image); // 落下アニメーションが終了したら画像を削除
-    });
+    var posY = -image.height; // 初期位置を画面の上端の外側に設定
+    
+    function fall() {
+      posY += 1; // 落下速度を調整する場合は値を変更
+    image.style.top = posY + 'px';
+    
+    if (posY < window.innerHeight) {
+        requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
+    } else {
+        document.body.removeChild(image); // 画面外に出たら要素を削除
+    }
+    }
+    
+    requestAnimationFrame(fall); // 最初のフレームを呼び出す
 }
 
 window.addEventListener('DOMContentLoaded', function() {
-    setInterval(createFallingImage, 500); // 0.5秒ごとに画像を生成
+    var imageCount = 5; // 落下させる画像の数
+    
+    for (var i = 0; i < imageCount; i++) {
+        createFallingImage();
+    }
 });
+
+
+木表示
+window.addEventListener('DOMContentLoaded', function() {
+    var backgroundImage = new Image();
+    backgroundImage.src = 'tree.jpg';
+    
+    function resizeBackground() {
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+    
+        var imageWidth = backgroundImage.width;
+        var imageHeight = backgroundImage.height;
+    
+        var widthRatio = windowWidth / imageWidth;
+        var heightRatio = windowHeight / imageHeight;
+    
+        var scale = Math.max(widthRatio, heightRatio);
+    
+        var scaledWidth = imageWidth * scale;
+        var scaledHeight = imageHeight * scale;
+    
+        backgroundImage.style.width = scaledWidth + 'px';
+        backgroundImage.style.height = scaledHeight + 'px';
+    }
+    
+    window.addEventListener('resize', resizeBackground);
+    
+    resizeBackground();
+    
+    document.body.style.overflow = 'hidden';
+    document.body.style.backgroundImage = 'url(' + backgroundImage.src + ')';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundAttachment = 'fixed';
+});
+
