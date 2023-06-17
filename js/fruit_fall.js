@@ -46,11 +46,11 @@ function wait(delay) {
 }
 
 window.addEventListener('DOMContentLoaded', async function() {
-    var imageCount = Quantity; // 落下させる画像の数
+    //var imageCount = Quantity; // 落下させる画像の数
 
 
     for(;;){
-        for (; i < imageCount; i++) {
+        for (; i < Quantity; i++) {
             createFallingImage();
             await wait();
             if(i > window.innerHeight + 100) {
@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         if(i > window.innerHeight + 100) {
             break;
         }
-        if (i < imageCount) {
+        if (i < Quantity) {
             n = i;
             await wait(100);
             continue;
