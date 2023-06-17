@@ -3,8 +3,12 @@ function getValue() {
     var value = inputElement.value;
     console.log("入力された値: " + value);
     var weight = parseFloat(value); // 変数をローカルに宣言
-    sessionStorage.setItem("weight", weight); // 値を sessionStorage に保存
-    location.href = 'measuring.html';
+    if(weight){
+        sessionStorage.setItem("weight", weight); // 値を sessionStorage に保存
+        location.href = 'measuring.html';
+    }else{
+        alert("体重を入力してください！")
+    }
 }
 
 // ページが読み込まれた際に sessionStorage から値を取得
