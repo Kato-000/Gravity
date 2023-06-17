@@ -1,6 +1,6 @@
 var data = JSON.parse(Fruites);
 
-var FruitesNumber = 3;
+var FruitesNumber = 5;
 var i = Math.floor(Math.random() * FruitesNumber) + 1;
 var Num = parseFloat(i); // 変数をローカルに宣言
 
