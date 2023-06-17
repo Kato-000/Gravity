@@ -1,13 +1,14 @@
 function createFallingImage() {
     var image = new Image();
-    image.src = FruitesImg;
+    var j = Math.floor(Math.random() * 2) + 1;
+    image.src = FruitesImg = data["A" + j].img;
     image.classList.add('apple');
     
     var windowWidth  = window.innerWidth;
     var windowHeight = window.innerHeight;
     
-    var imageWidth  = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな幅を設定
-    var imageHeight = Math.floor(Math.random() * 500) + 50; // 50から150の間でランダムな高さを設定
+    var imageWidth  = Math.floor(Math.random() * 50) + 50; // 50から150の間でランダムな幅を設定
+    var imageHeight = Math.floor(Math.random() * 500) + 300; // 50から150の間でランダムな高さを設定
     
     image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)) + 'px'; // ランダムな水平位置を設定
     image.style.top  = -imageHeight + 'px'; // 画面の上端の外側に初期位置を設定
