@@ -6,7 +6,6 @@ var data = JSON.parse(Fruites);
 // console.log(data.employee.siblings.Liza);
 
 var FruitesName = data.A1.name;
-var FruitesWeight = data.A1.weight;
 var FruitesImg = data.A1.img
 
 console.log(FruitesWeight);

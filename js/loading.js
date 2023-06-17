@@ -1,6 +1,6 @@
 function createFallingImage() {
     var image = new Image();
-    image.src = '../img/apple.jpg';
+    image.src = FruitesImg;
     image.classList.add('apple');
     
     var windowWidth  = window.innerWidth;
