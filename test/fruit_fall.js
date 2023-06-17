@@ -36,22 +36,24 @@ function backgroundTree() {
 function createFallingImage() {
     backgroundTree();
     var image = new Image();
-    image.src = '../img/pineapple.jpg';
+    image.src = '../img/apple.jpg';
     image.classList.add('apple');
     
+    var imageCount = 100; // 落下させる画像の数
+
     var windowWidth  = window.innerWidth;
     var windowHeight = window.innerHeight;
     
     var imageWidth  = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな幅を設定
-    var imageHeight = Math.floor(Math.random() * 500) + 50; // 50から550の間でランダムな高さを設定
+    var imageHeight = Math.floor(Math.random() * imageCount) + 50; // 50から550の間でランダムな高さを設定
     
-    image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)-100) + 'px'; // ランダムな水平位置を設定
+    image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)-50) + 'px'; // ランダムな水平位置を設定
     image.style.top  = -imageHeight  + 'px'; // 画面の上端の外側に初期位置を設定
     
     document.body.appendChild(image);
-    
     var posY  = -imageHeight-500; // 初期位置を画面の上端の外側に設定
     var speed = Math.random() * 14 + 5; // 1から20の間でランダムな速度を設定
+
     
     function fall() {
         posY += speed; // 速度に応じて垂直位置を変化させる
@@ -61,8 +63,8 @@ function createFallingImage() {
             requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
         } 
         if(posY > windowHeight-imageHeight){
-            speed = 0
-            posY = windowHeight-imageHeight  
+            speed = 0;
+            posY = windowHeight-imageHeight;
         }
     }
     

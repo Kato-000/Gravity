@@ -1,6 +1,6 @@
 function createFallingImage() {
     var image = new Image();
-    var j = Math.floor(Math.random() * 2) + 1;
+    var j = Math.floor(Math.random() * FruitesNumber) + 1;
     image.src = FruitesImg = data["A" + j].img;
     image.classList.add('apple');
     
