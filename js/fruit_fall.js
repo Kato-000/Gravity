@@ -25,7 +25,7 @@ function createFallingImage() {
         posY += speed; // 速度に応じて垂直位置を変化させる
         image.style.top = posY + 'px';
 
-        if (posY >= windowHeight - image.height && Quantity < 30){
+        if (posY >= windowHeight - image.height && Quantity < 30 && FruitsWeight != 30000){
             speed = 0;
             posY = windowHeight - image.height;
         }
