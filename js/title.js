@@ -1,5 +1,3 @@
-var weight = 10;
-
 function getValue() {
     var inputElement = document.getElementById("myInput");
     var value = inputElement.value;
