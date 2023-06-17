@@ -32,14 +32,13 @@ function backgroundTree() {
     document.body.style.backgroundAttachment = 'fixed';
 }
 
+var i = 0, n = 0;
 
 function createFallingImage() {
 
     var image = new Image();
     image.src = FruitsImg;
     image.classList.add('fruits');
-    
-    var imageCount = Quantity; // 落下させる画像の数
 
     var windowWidth  = window.innerWidth;
     var windowHeight = window.innerHeight;
@@ -53,18 +52,20 @@ function createFallingImage() {
     document.body.appendChild(image);
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
     var speed = Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
+    var randonNum = Math.random() * 100 - 200
 
     
     function fall() {
         posY += speed; // 速度に応じて垂直位置を変化させる
         image.style.top = posY + 'px';
+
     
-        if (posY < windowHeight - image.height) {
+        if (posY < windowHeight - image.height - i - randonNum) {
             requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
         } 
         else {
             speed = 0;
-            posY = windowHeight - image.height;
+            posY = windowHeight - image.height - i - randonNum;
         }
     }
     
@@ -78,12 +79,12 @@ function wait(delay) {
 window.addEventListener('DOMContentLoaded', async function() {
     var imageCount = Quantity; // 落下させる画像の数
 
-    var i = 0, n = 0;
 
     for(;;){
         for (; i < imageCount; i++) {
             createFallingImage();
             await wait(50)
+            if(i > window.innerHeight) break;
             if(i - n > 100)break;
         }
         if (i < imageCount) {
