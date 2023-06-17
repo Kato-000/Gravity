@@ -3,11 +3,21 @@ html{
     font-family:"ヒラギノ角ゴ Pro W3","MSPゴシック",sans-serif;
     background-color: #FFECA4;
 }
-h1{
+h1.measuring{ 
+  color: #DB98F5;
+  text-align: center;
+  font-size: 5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+p.maintext{
     color: #DB98F5;
     text-align: center;
-    font-size: 6em
-    
+    font-size: 5em;
 }
 p.mainparts{
   height:100px;
@@ -18,7 +28,7 @@ p.mainparts{
   left: 0;
   right: 0;
   bottom: 0;
-    color:#9460A8;
+  color:#9460A8;
 }
 a.btn--yellow {
   font-size: 1.6rem;
