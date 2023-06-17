@@ -45,7 +45,7 @@ function createFallingImage() {
     var windowHeight = window.innerHeight;
     
     var imageWidth  = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな幅を設定
-    var imageHeight = Math.floor(Math.random() * imageCount) + 50; // 50から550の間でランダムな高さを設定
+    var imageHeight = Math.floor(Math.random() * imageCount*2) + 100; // 50から550の間でランダムな高さを設定
     
     image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)-50) + 'px'; // ランダムな水平位置を設定
     image.style.top  = -imageHeight  + 'px'; // 画面の上端の外側に初期位置を設定
