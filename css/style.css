@@ -24,7 +24,6 @@ a.btn--yellow {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.5;
-  position: relative;
   display: inline-block;
   padding: 1rem 4rem;
   cursor: pointer;
@@ -40,13 +39,15 @@ a.btn--yellow {
   letter-spacing: 0.1em;
   color: #212529;
   border-radius: 0.5rem;
-  position: absolute; /*自由に配置する指定*/
-  bottom: 0; /*下寄せの指定*/
-  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   
 }
 
 input{
+  text-align: center;
   height:100px;
   width: 200px;
   margin: auto;
