@@ -52,7 +52,7 @@ function createFallingImage() {
     
     document.body.appendChild(image);
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
-    var speed = Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
+    var speed = 100 //Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
 
     
     function fall() {
@@ -77,13 +77,6 @@ function wait(delay) {
 
 window.addEventListener('DOMContentLoaded', async function() {
     var imageCount = Quantity; // 落下させる画像の数
-<<<<<<< HEAD
-    
-    for (var i = 0; i < imageCount; i++) {
-        if(i<=100){
-            createFallingImage();
-        }
-=======
 
     var i = 0, n = 0;
 
@@ -99,7 +92,6 @@ window.addEventListener('DOMContentLoaded', async function() {
             continue;
         }
         break;
->>>>>>> 0875dd36a619b53ce86713d8b7062b15a6f6d651
     }
 
     backgroundTree();
