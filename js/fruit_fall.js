@@ -59,12 +59,12 @@ function createFallingImage() {
         posY += speed; // 速度に応じて垂直位置を変化させる
         image.style.top = posY + 'px';
     
-        if (posY < windowHeight) {
+        if (posY < windowHeight - image.height) {
             requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
         } 
-        if(posY > windowHeight - image.height){
+        else {
             speed = 0;
-            posY = windowHeight - image.height + 20;
+            posY = windowHeight - image.height;
         }
     }
     
