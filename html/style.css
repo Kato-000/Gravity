@@ -1,11 +1,12 @@
 @charset "utf-8";
 html{
     font-family:"ヒラギノ角ゴ Pro W3","MSPゴシック",sans-serif;
+    background-color: #FFECA4;
 }
 h1{
-    color: rgba(255, 40, 40, 0.89);
+    color: #9460A8;
     text-align: center;
-}]
+}
 p{
     text-align: center;
 }
