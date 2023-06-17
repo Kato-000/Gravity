@@ -3,6 +3,11 @@ html{
     font-family:"ヒラギノ角ゴ Pro W3","MSPゴシック",sans-serif;
     background-color: #FFECA4;
 }
+h1.out{
+  color: #DB98F5;
+  text-align: center;
+  font-size: 6em;
+}
 h1.measuring{ 
   color: #DB98F5;
   text-align: center;
@@ -94,4 +99,7 @@ p.rightpart{
   transform: translateX(-50%);
   bottom: 42%;
   font-size: 2em;
+}
+h1.out{
+  
 }
