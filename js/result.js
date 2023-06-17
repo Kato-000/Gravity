@@ -14,4 +14,5 @@ var outputElement = document.getElementById("output");
 var outputExplanation = document.getElementById("explanation");
 console.log(Quantity);
 outputElement.textContent = FruitsName + ":" + Quantity + "個分";
-outputExplanation = FruitsExplanation;
+outputExplanation.textContent = FruitsExplanation;
+console.log(FruitsExplanation);
