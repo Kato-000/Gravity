@@ -39,6 +39,7 @@ function createFallingImage() {
     var image = new Image();
     image.src = FruitsImg;
     image.classList.add('fruits');
+    var imageCount = Quantity;
 
     var windowWidth  = window.innerWidth;
     var windowHeight = window.innerHeight;
@@ -52,7 +53,9 @@ function createFallingImage() {
     document.body.appendChild(image);
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
     var speed = Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
-    var randonNum = Math.random() * 100 - 200
+    if(imageCount<=50){
+        var randonNum = Math.random() * 200 - 100;
+    }
 
     
     function fall() {
@@ -60,12 +63,12 @@ function createFallingImage() {
         image.style.top = posY + 'px';
 
     
-        if (posY < windowHeight - image.height - i - randonNum) {
+        if (posY < windowHeight - i - randonNum) {
             requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
         } 
         else {
             speed = 0;
-            posY = windowHeight - image.height - i - randonNum;
+            posY = windowHeight - i - randonNum;
         }
     }
     
