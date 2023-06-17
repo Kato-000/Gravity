@@ -1,7 +1,7 @@
 function NextPage() {
-    var value = weight * 1000 / FruitsWeight[0];
+    var value = (weight * 1000 / FruitsWeight[0]).toFixed(1);;
     var Quantity = parseFloat(value); // 変数をローカルに宣言
-    sessionStorage.setItem("Quantuty", Quantity); // 値を sessionStorage に保存
+    sessionStorage.setItem("Quantity", Quantity); // 値を sessionStorage に保存
     location.href='result.html';
 }
 
