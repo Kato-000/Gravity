@@ -71,12 +71,29 @@ function createFallingImage() {
     requestAnimationFrame(fall); // 最初のフレームを呼び出す
 }
 
-    window.addEventListener('DOMContentLoaded', function() {
+function wait(delay) {
+    return new Promise(resolve => setTimeout(resolve, delay));
+}
+
+window.addEventListener('DOMContentLoaded', async function() {
     var imageCount = Quantity; // 落下させる画像の数
-    
-    for (var i = 0; i < imageCount; i++) {
-        createFallingImage();
+
+    var i = 0, n = 0;
+
+    for(;;){
+        for (; i < imageCount; i++) {
+            createFallingImage();
+            await wait(50)
+            if(i - n > 100)break;
+        }
+        if (i < imageCount) {
+            n = i;
+            await wait(50)
+            continue;
+        }
+        break;
     }
 
     backgroundTree();
 });
+
