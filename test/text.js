@@ -32,3 +32,4 @@ function display(){
 	}
 	if(m>1000)n++;
 }
+
