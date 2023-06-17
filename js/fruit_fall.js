@@ -53,10 +53,14 @@ function createFallingImage() {
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     var speed = 100// Math.random() ; // 5から20の間でランダムな速度を設定
 =======
     var speed = Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
 >>>>>>> e90c3a499b1719d99044f4b5d3687ae60ece8e1a
+=======
+    var speed = Math.random() * 100; // 5から20の間でランダムな速度を設定
+>>>>>>> parent of e90c3a4 (New New fruit_fall)
 =======
     var speed = Math.random() * 100; // 5から20の間でランダムな速度を設定
 >>>>>>> parent of e90c3a4 (New New fruit_fall)
