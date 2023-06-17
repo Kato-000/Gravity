@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/alasql@0.4.11/dist/alasql.js"></script>
+    <title>datatest</title>
+</head>
+<body>
+    <header>
+    </header>
+    <p id="tas">ここに入力される</p>
+    <script>
+  $(function(){
+  var $script = $('<script>').attr({
+    'type': 'text/javascript',
+    'src': './xxx.json.js'
+  });
+  $script.on('load', function(){
+    var data = window.SWEETS;
+    /// 読み込みデータをゴニョゴニョ...
+  });
+  $('body')[0].appendChild(script[0]);
+});
+</script>
+    <script src="testdata.js"></script>
+</body>
+</html>

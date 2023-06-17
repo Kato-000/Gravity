@@ -6,6 +6,7 @@ html{
 h1{
     color: #DB98F5;
     text-align: center;
+    font-size: 6em
 }
 p{
     text-align: center;
@@ -33,6 +34,10 @@ a.btn--yellow {
   border-radius: 0.5rem;
 }
 
+input{
+  font-size: 1.5em;
+}
+
 a.btn--yellow {
   color: #000;
   background-color: #fff100;
@@ -44,4 +49,9 @@ a.btn--yellow:hover {
   color: #000;
   background: #fff20a;
   border-bottom: 2px solid #ccc100;
+}
+p.mainparts{
+ font-size:2em;
+ width: 10em;
+ max-width: 100%;
 }
