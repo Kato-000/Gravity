@@ -1,8 +1,48 @@
+<<<<<<< HEAD
 
 
 function createFallingImage() {
     var image = new Image();
     image.src = 'apple.jpg';
+=======
+window.addEventListener('DOMContentLoaded', function() {
+	var backgroundImage = new Image();
+	backgroundImage.src = 'tree.jpg';
+	
+	function resizeBackground() {
+		var windowWidth = window.innerWidth;
+		var windowHeight = window.innerHeight;
+
+		var imageWidth = backgroundImage.width;
+		var imageHeight = backgroundImage.height;
+
+		var widthRatio = windowWidth / imageWidth;
+		var heightRatio = windowHeight / imageHeight;
+	
+		var scale = Math.max(widthRatio, heightRatio);
+
+		var scaledWidth = imageWidth * scale;
+		var scaledHeight = imageHeight * scale;
+
+		backgroundImage.style.width = scaledWidth + 'px';
+		backgroundImage.style.height = scaledHeight + 'px';
+	}
+	
+	window.addEventListener('resize', resizeBackground);
+	
+	resizeBackground();
+	
+	document.body.style.overflow = 'hidden';
+	document.body.style.backgroundImage = 'url(' + backgroundImage.src + ')';
+	document.body.style.backgroundRepeat = 'no-repeat';
+	document.body.style.backgroundPosition = 'center';
+	document.body.style.backgroundAttachment = 'fixed';
+});
+
+function createFallingImage() {
+    var image = new Image();
+    image.src = 'apple.png';
+>>>>>>> 12ea02876ca6ab905c212834bf20f212028c8d57
     image.classList.add('apple');
     
     var windowWidth = window.innerWidth;
@@ -16,9 +56,15 @@ function createFallingImage() {
     
     function fall() {
       posY += 1; // 落下速度を調整する場合は値を変更
+<<<<<<< HEAD
         image.style.top = posY + 'px';
     
         if (posY < window.innerHeight) {
+=======
+    image.style.top = posY + 'px';
+    
+    if (posY < window.innerHeight) {
+>>>>>>> 12ea02876ca6ab905c212834bf20f212028c8d57
         requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
     } else {
         document.body.removeChild(image); // 画面外に出たら要素を削除
