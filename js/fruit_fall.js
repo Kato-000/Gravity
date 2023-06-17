@@ -34,10 +34,10 @@ function backgroundTree() {
 
 
 function createFallingImage() {
-    backgroundTree();
+
     var image = new Image();
     image.src = FruitsImg;
-    image.classList.add('apple');
+    image.classList.add('fruits');
     
     var imageCount = Quantity; // 落下させる画像の数
 
@@ -77,4 +77,6 @@ function createFallingImage() {
     for (var i = 0; i < imageCount; i++) {
     createFallingImage();
     }
+
+    backgroundTree();
 });
