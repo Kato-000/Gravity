@@ -6,6 +6,7 @@ console.log("保存された値: " + Number);
 
 var data = JSON.parse(Fruites);
 var FruitsName = data["A" + Number].name;
+var FruitsWeight = data["A" + Number].weight;
 var FruitsImg = data["A" + Number].img;
 var FruitsExplanation = data["A" + Number].explanation;
 
