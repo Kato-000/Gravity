@@ -51,7 +51,7 @@ function createFallingImage() {
     
     document.body.appendChild(image);
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
-    var speed = Math.random() * 15 + 5; // 5から20の間でランダムな速度を設定
+    var speed = Math.random() * 100; // 5から20の間でランダムな速度を設定
     var randonNum = Math.random() * 100 - 200
 
     
