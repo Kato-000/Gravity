@@ -1,11 +1,7 @@
 var data = JSON.parse(Fruites);
 
-// console.log(data.employee.name);
-// console.log(data.employee.favoriteColor[2]);
-// console.log(data.employee.siblings);
-// console.log(data.employee.siblings.Liza);
+var i = Math.floor(Math.random() * 2) + 1;
 
-var FruitesName = data.A1.name;
-var FruitesImg = data.A1.img
-
-console.log(FruitesWeight);
+var FruitesName = data["A" + i].name;
+var FruitesWeight = data["A" + i].weight;
+var FruitesImg = data["A" + i].img;
