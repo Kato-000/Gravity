@@ -11,9 +11,7 @@ p{
     text-align: center;
     color:#9460A8;
 }
-.btn,
-a.btn,
-button.btn {
+a.btn--yellow {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.5;

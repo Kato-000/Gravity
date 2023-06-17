@@ -8,8 +8,7 @@ function getValue() {
         location.href = 'measuring.html';
     } else {
         alert("体重を入力してください！")
-    }
-    location.href = 'measuring.html';
+            }
 }
 
 // ページが読み込まれた際に sessionStorage から値を取得
