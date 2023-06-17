@@ -36,7 +36,7 @@ function backgroundTree() {
 function createFallingImage() {
     backgroundTree();
     var image = new Image();
-    image.src = 'apple.jpg';
+    image.src = '../img/apple.jpg';
     image.classList.add('apple');
     
     var windowWidth  = window.innerWidth;
@@ -61,13 +61,10 @@ function createFallingImage() {
         if (posY < windowHeight) {
             requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
         } 
-        else{
-            createFallingImage();
+        if(posY > windowHeight-100){
+            speed = 0
+            posY = windowHeight-image.src.naturalHeight;     
         }
-       // if(posY > windowHeight-100){
-         //   speed = 0
-            //posY = windowHeight-100;     
-       // }
     }
     
     requestAnimationFrame(fall); // 最初のフレームを呼び出す
