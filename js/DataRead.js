@@ -7,5 +7,3 @@ var data = JSON.parse(Fruites);
 
 var FruitesName = data.A1.name;
 var FruitesImg = data.A1.img
-
-console.log(FruitesWeight);
