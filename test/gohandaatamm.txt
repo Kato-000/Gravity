@@ -33,3 +33,9 @@
             createFallingImage();
         }
     });
+
+
+
+    .apple {
+      position: absolute;
+    }
