@@ -1,6 +1,6 @@
-let FruitsName = [];
-let FruitsWeight = [];
-let FruitsException = [];
+let FruitsName = ["りんご"];
+let FruitsWeight = [300];
+let FruitsException = ["りんごです。"];
 
 // fetch('../Data/FruitsData.csv')
 //   .then(response => response.text())
