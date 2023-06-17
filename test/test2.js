@@ -16,3 +16,5 @@
     
     // ページの読み込みが完了したらmoveImage関数を呼び出す
     window.addEventListener('load', moveImage);
+
+    
