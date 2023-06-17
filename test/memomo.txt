@@ -1,2 +1,21 @@
-Hello
-fane
+function createFallingImage() {
+    var image = new Image();
+    image.src = 'fruit_apple.jpg';
+    image.classList.add('fruit_apple');
+    
+    var windowWidth = window.innerWidth;
+    var imageWidth = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな幅を設定
+    
+    image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)) + 'px'; // ランダムな水平位置を設定
+    image.style.animationDuration = Math.floor(Math.random() * 5) + 5 + 's'; // 5から10秒の間でランダムな落下速度を設定
+    
+    document.body.appendChild(image);
+    
+    image.addEventListener('animationend', function() {
+      document.body.removeChild(image); // 落下アニメーションが終了したら画像を削除
+    });
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+    setInterval(createFallingImage, 500); // 0.5秒ごとに画像を生成
+});
