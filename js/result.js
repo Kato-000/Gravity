@@ -15,3 +15,11 @@ var outputElement = document.getElementById("output");
 var outputExplanation = document.getElementById("explanation");
 outputElement.textContent = FruitsName + ":" + Quantity + "個分";
 outputExplanation.textContent = FruitsExplanation;
+
+function goToHome() {
+    location.href = 'title.html'
+}
+
+function retryMeasure() {
+    location.href = 'measuring.html'
+}
