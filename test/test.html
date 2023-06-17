@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>sample</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript">
+
+    for(let i = 1; i < 4; i++){
+      url = `test${i}.json`;
+
+      $.getJSON(url, (data) => {
+        console.log(`id=${data.id}, name=${data.name}, email=${data.email}`);
+      });
+    }
+  </script>
+</body>
+</html>
