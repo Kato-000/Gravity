@@ -36,18 +36,18 @@ function backgroundTree() {
 function createFallingImage() {
     backgroundTree();
     var image = new Image();
-    image.src = '../img/apple.jpg';
+    image.src = FruitsImg;
     image.classList.add('apple');
     
-    var imageCount = 100; // 落下させる画像の数
+    var imageCount = Quantity; // 落下させる画像の数
 
     var windowWidth  = window.innerWidth;
     var windowHeight = window.innerHeight;
     
     var imageWidth  = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな幅を設定
-    var imageHeight = Math.floor(Math.random() * imageCount) + 50; // 50から550の間でランダムな高さを設定
+    var imageHeight = Math.floor(Math.random() * imageCount*2+100) + 100; // 50から550の間でランダムな高さを設定
     
-    image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)-50) + 'px'; // ランダムな水平位置を設定
+    image.style.left = Math.floor(Math.random() * (windowWidth - imageWidth)-100) + 'px'; // ランダムな水平位置を設定
     image.style.top  = -imageHeight  + 'px'; // 画面の上端の外側に初期位置を設定
     
     document.body.appendChild(image);
@@ -72,7 +72,7 @@ function createFallingImage() {
 }
 
     window.addEventListener('DOMContentLoaded', function() {
-    var imageCount = 100; // 落下させる画像の数
+    var imageCount = Quantity; // 落下させる画像の数
     
     for (var i = 0; i < imageCount; i++) {
     createFallingImage();

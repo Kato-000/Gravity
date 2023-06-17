@@ -8,6 +8,6 @@ function getValue() {
         location.href = 'measuring.html';
     } else {
         alert("体重を入力してください！")
-            }
+    }
 }
 
