@@ -75,7 +75,9 @@ function createFallingImage() {
     var imageCount = Quantity; // 落下させる画像の数
     
     for (var i = 0; i < imageCount; i++) {
-        createFallingImage();
+        if(i<=100){
+            createFallingImage();
+        }
     }
 
     backgroundTree();
