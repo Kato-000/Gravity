@@ -1,16 +1,9 @@
-function handleFile() {
-    var fileInput = document.getElementById("csvFile");
-    var file = fileInput.files[0];
-    var reader = new FileReader();
-
-    reader.onload = function(e) {
-    var contents = e.target.result;
-    displayCSVContents(contents);
-    };
-
-    reader.readAsText(file);
-}
-
-function displayCSVContents(contents) {
-    console.log(contents);
-}
+fetch('../Data/FruitsData.csv')
+  .then(response => response.text())
+  .then(csvData => {
+    print(csvData);
+    // CSVデータを処理するコードをここに記述する
+  })
+  .catch(error => {
+    console.error('CSVファイルの読み込みエラー:', error);
+  });
