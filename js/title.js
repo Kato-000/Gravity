@@ -1,5 +1,3 @@
-var weight = 10;
-
 function getValue() {
     var inputElement = document.getElementById("myInput");
     var value = inputElement.value;
@@ -8,9 +6,10 @@ function getValue() {
     if(weight){
         sessionStorage.setItem("weight", weight); // 値を sessionStorage に保存
         location.href = 'measuring.html';
-    }else{
+    } else {
         alert("体重を入力してください！")
     }
+    location.href = 'measuring.html';
 }
 
 // ページが読み込まれた際に sessionStorage から値を取得
