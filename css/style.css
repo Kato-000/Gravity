@@ -137,7 +137,7 @@ p.rightpart{
   font-size: 1.1em;
 }
 .out{
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-left: 60px;
   margin-right: 60px;
   display: inline-block;
@@ -225,7 +225,7 @@ vertical-align: middle;
     font-family: 'Hachi Maru Pop', cursive;
     color: #DB98F5;
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     position: absolute;
     top: 0;
     left: 0;
@@ -342,7 +342,7 @@ vertical-align: middle;
     margin-left: 30px;
     margin-right: 30px;
     display: inline-block;
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
   .out{
     margin-bottom: 30px;
