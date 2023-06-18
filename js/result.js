@@ -17,16 +17,13 @@ var FruitsExplanation = data["A" + Number].explanation;
 // 取得した値を必要な処理に適用するなど
 var outputElement     = document.getElementById("output");
 var outputExplanation = document.getElementById("explanation");
-<<<<<<< HEAD
 if(FruitsWeight * Quantity < 1) outputElement.textContent = FruitsName + ":" + Quantity + "こ！" + "  小人?";
 else if(FruitsWeight * Quantity < 2.5) outputElement.textContent = FruitsName + ":" + Quantity + "こ！" + "  いい筋トレ道具だね";
 else if(FruitsWeight * Quantity < 3) outputElement.textContent = FruitsName + ":" + Quantity + "こ！" + "  赤ちゃん?";
 else if(FruitsWeight * Quantity < 5) outputElement.textContent = FruitsName + ":" + Quantity + "こ！" + "  赤ちゃん?";
 else outputElement.textContent = FruitsName + ":" + Quantity + "こ！";
-=======
 
 
->>>>>>> 07461ff115809b3ea50095804787e6c26180cd1b
 outputExplanation.textContent = FruitsExplanation;
 
 function goToHome() {
