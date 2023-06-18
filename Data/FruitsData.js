@@ -86,9 +86,9 @@ const Fruits = `{
     "A13": {
         "name": "梨",
         "weight": 346.7,
-        "img": "./img/",
-        "explanation": "",
-        "wiki": ""
+        "img": "./img/nasi.jpg",
+        "explanation": "ナシ（梨）は、バラ科ナシ属の植物、もしくは果物として食用にされるその果実のこと。主なものとして、和なし(日本なし、Pyrus pyrifolia var. culta ）、中国なし (P. bretschneideri) 、洋なし(西洋なし、P. communis )の3つがあり、食用として世界中で栽培される。日本語で単に「梨」と言うと通常はこのうちの和なしを指し、本項でもこれについて説明する。他のナシ属はそれぞれの項目を参照のこと。",
+        "wiki": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%B7"
     }
 }`;
 
