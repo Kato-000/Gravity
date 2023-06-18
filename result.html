@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta   charset="UTF-8">
-    <link   rel    ="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <link   rel    ="stylesheet" href="./css/style.css"> 
-    <script src    ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>フルーツ体重計</title>
-    <link   rel = "preconnect" href="https://fonts.googleapis.com">
-<link       rel ="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link       href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>くだものめ～た～</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
     <style>
         body {
           margin: 0;
@@ -34,14 +34,13 @@
   <!--ローディング画面に戻ります＊ローディング画面に入ったときフルーツを抽選が始まるような仕様で、あとキャラ追加後要名前変更-->
   <script src="./Data/FruitsData.js"></script>
   <script src="./js/fruit_fall.js"></script>
-  <h2>あなたの体重は...</h2>
-  <div    class="box">
-    <h1   class="out" id="output"></h1>
-    <p    id   = "explanation" class= "exp"></p>
-    <p    id   = "memo" class= "memo"></p>
-    <a    id   ="home" onclick="goToHome()" class="btn btn--yellow btn--cubic btnhome" onclick="location.href='title.html'">最初にもどる</a>
-    <a    id   ="retry" onclick="retryMeasure()" class="btn btn--yellow btn--cubic btnretry" onclick="location.href='measuring.html'">再計測！</a>
-    <a    href ="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ツイートする" data-url="https://fruitmeasure.com/testurl.html" data-hashtags="フルーツ体重計" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <h2>あのおもさは...</h2>
+  <div class="box">
+    <h1 class="out" id="output"></h1>
+    <p id = "explanation" class= "exp"></p>
+    <a id="home" onclick="goToHome()" class="btn btn--yellow btn--cubic btnhome" onclick="location.href='title.html'">さいしょにもどる！</a>
+    <a id="retry" onclick="retryMeasure()" class="btn btn--yellow btn--cubic btnretry" onclick="location.href='measuring.html'">もっかいはかる！</a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://fruitmeasure.com/testurl.html" data-hashtags="くだものめ～た～" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   <script src ="./js/result.js"></script>
   

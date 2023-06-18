@@ -1,8 +1,6 @@
 function createFallingImage() {
-
     var image = new Image();
-    var j     = Math.floor(Math.random() * FruitesNumber) + 1;
-
+    var j = Math.floor(Math.random() * FruitesNumber) + 1;
     image.src = FruitesImg = data["A" + j].img;
     image.classList.add('fruit');
     
@@ -22,7 +20,6 @@ function createFallingImage() {
     
     function fall() {
         posY += speed; // 速度に応じて垂直位置を変化させる
-
         image.style.top = posY + 'px';
     
         if (posY < windowHeight) {
@@ -41,6 +38,6 @@ function createFallingImage() {
     var imageCount = 30; // 落下させる画像の数
     
     for (var i = 0; i < imageCount; i++) {
-        createFallingImage();
+    createFallingImage();
     }
 });

@@ -130,6 +130,7 @@ p.rightpart{
   margin-left: 60px;
   margin-right: 60px;
   display: inline-block;
+  font-size: 1.1em;
 }
 .btnstart{
   position: absolute;

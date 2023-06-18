@@ -7,18 +7,17 @@ function createFallingImage() {
     var image = new Image();
     var i = Math.floor(Math.random() * FruitesNumber) + 1;
     var FruitsImg = data["A" + i].img;
-
     image.src = FruitsImg;
     image.classList.add('fruits');
 
     var windowWidth  = window.innerWidth;
     var windowHeight = window.innerHeight;
     
-    var imageWidth  = Math.floor(Math.random() * (windowWidth + image.width)) + 50; // ランダムな幅を設定
-    var imageHeight = Math.floor(Math.random() * (windowHeight + image.height)); // 50から150の間でランダムな高さを設定
+    var imageWidth  = Math.floor(Math.random() * image.width) + 50; // ランダムな幅を設定
+    var imageHeight = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな高さを設定
     
-    image.style.left = imageWidth + 'px'; // ランダムな水平位置を設定
-    image.style.top  = imageHeight + 'px'; // 画面の上端の外側に初期位置を設定
+    image.style.left = Math.floor(Math.random() * (windowWidth+100 + imageWidth)) - imageWidth -50+ 'px'; // ランダムな水平位置を設定
+    image.style.top  = - imageHeight + 'px'; // 画面の上端の外側に初期位置を設定
     
     document.body.appendChild(image);
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
@@ -45,5 +44,6 @@ window.addEventListener('DOMContentLoaded', async function() {
     for (; i < 1000; i++) {
         createFallingImage();
     }
+
 });
 
