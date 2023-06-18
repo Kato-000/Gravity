@@ -2,7 +2,7 @@ function createFallingImage() {
     var image = new Image();
     var j = Math.floor(Math.random() * FruitesNumber) + 1;
     image.src = FruitesImg = data["A" + j].img;
-    image.classList.add('apple');
+    image.classList.add('fruit');
     
     var windowWidth  = window.innerWidth;
     var windowHeight = window.innerHeight;
