@@ -18,6 +18,7 @@ if(FruitsWeight * Quantity < 1) outputElement.textContent = FruitsName + ":" + Q
 else if(FruitsWeight * Quantity < 2.5) outputElement.textContent = FruitsName + ":" + Quantity + "個分" + "  いい筋トレ道具だね";
 else if(FruitsWeight * Quantity < 3) outputElement.textContent = FruitsName + ":" + Quantity + "個分" + "  赤ちゃん?";
 else if(FruitsWeight * Quantity < 5) outputElement.textContent = FruitsName + ":" + Quantity + "個分" + "  赤ちゃん?";
+else outputElement.textContent = FruitsName + ":" + Quantity + "個分";
 outputExplanation.textContent = FruitsExplanation;
 
 function goToHome() {
