@@ -24,6 +24,7 @@ p.maintext{
     color: #DB98F5;
     text-align: center;
     font-size: 5em;
+    font-weight:bold;
 }
 p.mainparts{
   height:100px;
