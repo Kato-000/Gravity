@@ -1,10 +1,11 @@
 var Quantity = sessionStorage.getItem("Quantity");
-console.log("保存された値: " + Quantity);
+console.log("保存された値Quantity: " + Quantity);
 
 var Number = sessionStorage.getItem("Number");
-console.log("保存された値: " + Number);
+console.log("保存された値Number: " + Number);
 
-var data = JSON.parse(Fruites);
+var data = JSON.parse(Fruits);
+
 var FruitsName = data["A" + Number].name;
 var FruitsWeight = data["A" + Number].weight;
 var FruitsImg = data["A" + Number].img;
