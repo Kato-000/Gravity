@@ -1,4 +1,4 @@
-const Fruites1 = `{
+const Fruits1 = `{
     "name": "りんご",
     "weight": 461.1,
     "img": "../img/apple.jpg",
@@ -6,7 +6,7 @@ const Fruites1 = `{
     "wiki": "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%B3%E3%82%B4"
 }`;
 
-const Fruites2 = `{
+const Fruits2 = `{
     "name": "パイナップル",
     "weight": 931.4,
     "img": "../img/pineapple.jpg",
@@ -14,7 +14,7 @@ const Fruites2 = `{
     "wiki": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%82%A4%E3%83%8A%E3%83%83%E3%83%97%E3%83%AB"
 }`;
 
-const Fruites3 = `{
+const Fruits3 = `{
     "name": "バナナ",
     "weight": 552.9,
     "img": "../img/banana.jpg",
@@ -22,7 +22,7 @@ const Fruites3 = `{
     "wiki": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%8A%E3%83%8A"
 }`;
 
-const Fruites4 = `{
+const Fruits4 = `{
     "name": "キウイフルーツ",
     "weight": 100,
     "img": "../img/kiui.jpg",
@@ -31,19 +31,20 @@ const Fruites4 = `{
 
 }`;
 
-const Fruites5 = `{
+const Fruits5 = `{
     "name": "パラミツ",
     "weight": 30000,
     "img": "../img/paramitu.jpg",
     "explanation": "パラミツ（ハラミツ、波羅蜜、菠蘿蜜、学名：Artocarpus heterophyllus）はクワ科パンノキ属の常緑高木。英語で、ジャックフルーツ（英: Jack fruit）と呼ばれ、東南アジア、南アジア、アフリカ、ブラジルで果樹などとして栽培されている。東アジアでは台湾南部や中国海南省、広東省、雲南省などで栽培されている。原産はインドからバングラデシュと考えられている。",
     "wiki": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%83%9F%E3%83%84"
 }`;
+
 /*
-    "A2": {
-        "name": "",
-        "weight": ,
-        "img": "../img/",
-        "explanation": "",
-        "wiki": ""
-    }
+const Fruits6 = `{
+    "name": "",
+    "weight": ,
+    "img": "../img/",
+    "explanation": "",
+    "wiki": ""
+}`;
 */
