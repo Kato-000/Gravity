@@ -66,7 +66,7 @@ a.btn--yellow {
 }
 
 input{
-  background: #eeeeeec1;
+  background: #eeeeeea2;
   font-family: 'Hachi Maru Pop', cursive;
   border: 2px solid rgb(222, 196, 0);  /* 枠線 */
     border-radius: 0.67em;
@@ -273,7 +273,7 @@ vertical-align: middle;
   }
   
   input{
-    background: #eeeeeec1;
+    background: #eeeeeea2;
   font-family: 'Hachi Maru Pop', cursive;
   border: 2px solid rgb(222, 196, 0);  /* 枠線 */
     border-radius: 0.67em;
@@ -319,7 +319,7 @@ vertical-align: middle;
   
   .box {
     height: 800x;
-    background-color: #fffeb0f5;
+    background-color: #fffeb0b8;
     border: 10px solid #FFD396;
     margin: 100px 50px;
     position: absolute;
@@ -393,7 +393,7 @@ vertical-align: middle;
   }
   .startbox{
     height: 800x;
-    background-color: #fffeb0dc;
+    background-color: #fffeb0f3;
     border: 10px solid #FFD396;
     margin: 100px 50px;
     position: absolute;
