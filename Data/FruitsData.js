@@ -79,14 +79,14 @@ const Fruits = `{
     "A12": {
         "name": "マンゴー",
         "weight": 250,
-        "img": "./img/"mango.jpg,
+        "img": "./img/mango.jpg",
         "explanation": "マンゴー（檬果・芒果、英: Mango、学名: Mangifera indica)は、ウルシ科マンゴー属の果樹、またその果実。別名で、菴羅(あんら)、菴摩羅(あんまら)ともいう。マンゴーの栽培は古く、紀元前のインドで始まっており、仏教では、聖なる樹とされ、ヒンドゥー教では、マンゴーは万物を支配する神「プラジャーパティ」の化身とされている。リンネの『植物の種』(1753年) で記載された植物の一つである。",
         "wiki": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%B3%E3%82%B4%E3%83%BC"
     },
     "A13": {
-        "name": "なし",
-        "weight": ,
-        "img": "../img/",
+        "name": "梨",
+        "weight": 346.7,
+        "img": "./img/",
         "explanation": "",
         "wiki": ""
     }
