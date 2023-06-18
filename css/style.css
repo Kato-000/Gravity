@@ -1,6 +1,7 @@
 @charset "utf-8";
+@media screen and (orientation: landscape){
 html{
-    font-family:"ヒラギノ角ゴ Pro W3","MSPゴシック",sans-serif;
+  font-family: 'Hachi Maru Pop', cursive;
     background-color: #FFECA4;
 }
 h1.out{
@@ -10,6 +11,7 @@ h1.out{
   font-size: 4em;
 }
 h1.measuring{ 
+  font-family: 'Hachi Maru Pop', cursive;
   color: #DB98F5;
   text-align: center;
   font-size: 5em;
@@ -21,6 +23,7 @@ h1.measuring{
   z-index: 100;
 }
 p.maintext{
+  font-family: 'Hachi Maru Pop', cursive;
     color: #DB98F5;
     text-align: center;
     font-size: 5em;
@@ -115,6 +118,10 @@ p.rightpart{
   vertical-align: middle;
   }
 .exp{
+  font-family :
+	YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
   margin-bottom: 60px;
   margin-left: 60px;
   margin-right: 60px;
@@ -155,4 +162,186 @@ p.rightpart{
   margin-bottom: 20px;
   margin-left:auto;
   display: inline-block;
+}
+}
+
+
+
+
+
+
+
+/*
+
+
+ここからスマホ
+
+
+*/
+@media screen and (orientation: portrait) {
+  html{
+    font-family: 'Hachi Maru Pop', cursive;
+      background-color: #FFECA4;
+  }
+  h1.out{
+    vertical-align:top;
+    color: #DB98F5;
+    text-align: center;
+    font-size: 2em;
+  }
+  h1.measuring{ 
+    font-family: 'Hachi Maru Pop', cursive;
+    color: #DB98F5;
+    text-align: center;
+    font-size: 5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+  }
+  p.maintext{
+    font-family: 'Hachi Maru Pop', cursive;
+      color: #DB98F5;
+      text-align: center;
+      font-size: 3em;
+      font-weight:bold;
+  }
+  p.mainparts{
+    height:100px;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:#9460A8;
+  }
+  a.btn--yellow {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+  
+  input{
+    text-align: center;
+    height:60px;
+    width: 120px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 4em;
+  }
+  
+  a.btn--yellow {
+    color: #000;
+    background-color: #fff100;
+    border-bottom: 5px solid #ccc100;
+  }
+  
+  a.btn--yellow:hover {
+    margin-top: 3px;
+    color: #000;
+    background: #fff20a;
+    border-bottom: 2px solid #ccc100;
+  }
+  p.leftpart{
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    bottom: 42%;
+    font-size: 2em;
+  }
+  p.rightpart{
+    position: absolute;
+    right: -20%;
+    text-align: right;
+    transform: translateX(-50%);
+    bottom: 42%;
+    font-size: 2em;
+  }
+  
+  .box {
+    height: 800x;
+        background-color: #fffeb09c;
+        border: 10px solid #FFD396;
+        margin: 100px 50px;
+        position: absolute;
+        
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    }
+  .exp{
+    font-family :
+    YuMincho,    
+    'Yu Mincho',
+    serif;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: inline-block;
+  }
+  .btnstart{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .btnhome{
+    margin-bottom: 20px;
+    margin-left:auto;
+    display: inline-block;
+  }
+  .btnretry{
+    margin-bottom: 20px;
+    margin-left:auto;
+    display: inline-block;
+  }
+  .twitter-follow-button, .twitter-follow-button:visited {
+    background-color: #1b95e0;
+    color: #fff;
+    border-radius: 4px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 26px;
+    padding: 8px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-left:auto;
+    display: inline-block;
+  }
+  .twitter-follow-button:hover {
+    background-color: #0c7abf;
+    margin-bottom: 20px;
+    margin-left:auto;
+    display: inline-block;
+    
+  }
 }
