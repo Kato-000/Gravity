@@ -191,7 +191,7 @@ p.rightpart{
     vertical-align:top;
     color: #DB98F5;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.3em;
   }
   h1.measuring{ 
     font-family: 'Hachi Maru Pop', cursive;
@@ -202,7 +202,7 @@ p.rightpart{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 20;
     z-index: 100;
   }
   p.maintext{
@@ -224,11 +224,11 @@ p.rightpart{
     color:#9460A8;
   }
   a.btn--yellow {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1;
     display: inline-block;
-    padding: 1rem 4rem;
+    padding: 0.5rem 2rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -247,7 +247,7 @@ p.rightpart{
   input{
     text-align: center;
     height:60px;
-    width: 120px;
+    width: 100px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -278,7 +278,7 @@ p.rightpart{
   }
   p.rightpart{
     position: absolute;
-    right: -20%;
+    right: -15%;
     text-align: right;
     transform: translateX(-50%);
     bottom: 42%;
@@ -287,29 +287,30 @@ p.rightpart{
   
   .box {
     height: 800x;
-        background-color: #fffeb09c;
-        border: 10px solid #FFD396;
-        margin: 100px 50px;
-        position: absolute;
-        
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+    background-color: #fffeb09c;
+    border: 10px solid #FFD396;
+    margin: 100px 50px;
+    position: absolute;
+    
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 100;
+text-align: center;
+display: table-cell;
+vertical-align: middle;
     }
   .exp{
     font-family :
     YuMincho,    
     'Yu Mincho',
     serif;
-    margin-bottom: 60px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     display: inline-block;
+    font-size: 0.5em;
   }
   .btnstart{
     position: absolute;
@@ -318,12 +319,12 @@ p.rightpart{
     transform: translateX(-50%);
   }
   .btnhome{
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     margin-left:auto;
     display: inline-block;
   }
   .btnretry{
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     margin-left:auto;
     display: inline-block;
   }
@@ -347,5 +348,8 @@ p.rightpart{
     margin-left:auto;
     display: inline-block;
     
+  }
+  h2{
+    text-align: center;
   }
 }
