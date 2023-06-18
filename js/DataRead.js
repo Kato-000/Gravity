@@ -1,4 +1,4 @@
-var FruitesNumber = 8;
+var FruitesNumber = 9;
 var i = Math.floor(Math.random() * FruitesNumber) + 1;
 var Num = parseFloat(i); // 変数をローカルに宣言
 var data = JSON.parse(Fruits);
