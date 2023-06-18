@@ -2,7 +2,7 @@
 // 画像を表示する関数
 function displayImages() {
 
-for (var i = 0; i < 100; i++) {
+for (var i = 0; i < 1000; i++) {
 
     var image = new Image();
     var j     = Math.floor(Math.random() * FruitesNumber) + 1;
