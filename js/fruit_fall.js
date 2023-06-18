@@ -1,37 +1,3 @@
-function backgroundTree() {
-    var backgroundImage = new Image();
-    backgroundImage.src = 'tree.jpg';
-    
-    function resizeBackground() {
-        var windowWidth  = window.innerWidth;
-        var windowHeight = window.innerHeight;
-    
-        var imageWidth  = backgroundImage.width;
-        var imageHeight = backgroundImage.height;
-    
-        var widthRatio  = windowWidth / imageWidth;
-        var heightRatio = windowHeight / imageHeight;
-    
-        var scale = Math.max(widthRatio, heightRatio);
-    
-        var scaledWidth  = imageWidth * scale;
-        var scaledHeight = imageHeight * scale;
-    
-        backgroundImage.style.width  = scaledWidth + 'px';
-        backgroundImage.style.height = scaledHeight + 'px';
-    }
-    
-    window.addEventListener('resize', resizeBackground);
-    
-    resizeBackground();
-    
-    document.body.style.overflow             = 'hidden';
-    document.body.style.backgroundImage      = 'url(' + backgroundImage.src + ')';
-    document.body.style.backgroundRepeat     = 'no-repeat';
-    document.body.style.backgroundPosition   = 'center';
-    document.body.style.backgroundAttachment = 'fixed';
-}
-
 var i = 0, n = 0;
 
 function createFallingImage() {
@@ -96,12 +62,12 @@ window.addEventListener('DOMContentLoaded', async function() {
         for (; i < Quantity; i++) {
             createFallingImage();
             await wait();
-            if(i > window.innerHeight + 100) {
+            if(i > window.innerHeight + 200) {
                 break;
             }
             if(i - n > 100)break;
         }
-        if(i > window.innerHeight + 100) {
+        if(i > window.innerHeight + 200) {
             break;
         }
         if (i < Quantity) {
@@ -111,7 +77,5 @@ window.addEventListener('DOMContentLoaded', async function() {
         }
         break;
     }
-
-    backgroundTree();
 });
 
