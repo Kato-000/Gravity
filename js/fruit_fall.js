@@ -46,32 +46,36 @@ function createFallingImage() {
     var imageWidth  = Math.floor(Math.random() * image.width) + 50; // ランダムな幅を設定
     var imageHeight = Math.floor(Math.random() * 100) + 50; // 50から150の間でランダムな高さを設定
     
-    image.style.left = Math.floor(Math.random() * (windowWidth+100 + imageWidth)) - imageWidth -50+ 'px'; // ランダムな水平位置を設定
+    image.style.left = Math.floor(Math.random() * (windowWidth + 100 + imageWidth)) - imageWidth -50 + 'px'; // ランダムな水平位置を設定
     image.style.top  = - imageHeight + 'px'; // 画面の上端の外側に初期位置を設定
     
     document.body.appendChild(image);
     var posY  = - imageHeight - 500; // 初期位置を画面の上端の外側に設定
     var speed;
     if (Quantity < 1000) speed = Math.random() * 10 + Quantity / 100 + 5; // 5から20の間でランダムな速度を設定
+    else if(Quantity > 10000 && Quantity < 12000) speed = 0;
+
     else speed = Math.random() * 25 + 10;
-    var randonNum = Math.random() * 100 - 200
+    var randonNum = Math.random() * 100 - 200;
 
     
     function fall() {
         posY += speed; // 速度に応じて垂直位置を変化させる
         image.style.top = posY + 'px';
 
-        if (posY >= windowHeight - image.height && Quantity < 30 && FruitsWeight <= 3000){
+        if (posY >= windowHeight - image.height && Quantity < 30 && FruitsWeight <= 3000 && speed != 0){
             speed = 0;
             posY = windowHeight - image.height;
         }
-        if (posY < windowHeight - image.height - i - randonNum) {
+        if (posY < windowHeight - image.height - i - randonNum && speed != 0) {
             requestAnimationFrame(fall); // まだ画面内にいる場合は再帰的に呼び出す
         } 
         else {
             speed = 0;
             posY = windowHeight - image.height - i - randonNum;
         }
+
+        image.style.top = posY + 'px';
     }
     
     requestAnimationFrame(fall); // 最初のフレームを呼び出す
