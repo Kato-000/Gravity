@@ -35,7 +35,7 @@ function createFallingImage() {
             speed = 0;
             posY = windowHeight - randonNum;
         }
-        else if (posY >= windowHeight - image.height && Quantity < 30 && FruitsWeight <= 3000 && speed != 0){
+        else if (posY >= windowHeight - image.height && Quantity < 50 && FruitsWeight <= 3000 && speed != 0){
             speed = 0;
             posY = windowHeight - image.height;
         }
