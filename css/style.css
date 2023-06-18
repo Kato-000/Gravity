@@ -181,7 +181,7 @@ p.rightpart{
 }
 .startbox{
   height: 800x;
-  background-color: #fffeb09c;
+  background-color: #fffeb0f5;
   border: 10px solid #FFD396;
   margin: 100px 50px;
   position: absolute;
@@ -319,7 +319,7 @@ vertical-align: middle;
   
   .box {
     height: 800x;
-    background-color: #fffeb09c;
+    background-color: #fffeb0f5;
     border: 10px solid #FFD396;
     margin: 100px 50px;
     position: absolute;
@@ -393,7 +393,7 @@ vertical-align: middle;
   }
   .startbox{
     height: 800x;
-    background-color: #fffeb09c;
+    background-color: #fffeb0dc;
     border: 10px solid #FFD396;
     margin: 100px 50px;
     position: absolute;
