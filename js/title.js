@@ -7,7 +7,7 @@ function getValue() {
         sessionStorage.setItem("weight", weight); // 値を sessionStorage に保存
         location.href = 'measuring.html';
     } else {
-        alert("体重を入力してください！")
+        alert("おもさを入力してね！")
     }
 }
 
