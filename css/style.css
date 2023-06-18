@@ -310,7 +310,7 @@ vertical-align: middle;
   }
   p.rightpart{
     position: absolute;
-    right: -5%;
+    right: -15%;
     text-align: center;
     transform: translateX(-50%);
     bottom: 42%;
