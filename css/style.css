@@ -321,13 +321,13 @@ vertical-align: middle;
     height: 800x;
     background-color: #fffeb0b8;
     border: 10px solid #FFD396;
-    margin: 100px 50px;
+    margin: 100px 25px;
     position: absolute;
     
 top: 0;
 left: 0;
 right: 0;
-bottom: 0;
+bottom: 20;
 z-index: 100;
 text-align: center;
 display: table-cell;
