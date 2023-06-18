@@ -4,6 +4,9 @@ console.log("保存された値Quantity: " + Quantity);
 var Number = sessionStorage.getItem("Number");
 console.log("保存された値Number: " + Number);
 
+var Weight = sessionStorage.getItem("weight");
+console.log("保存された値Number: " + Weight);
+
 var data = JSON.parse(Fruits);
 
 var FruitsName        = data["A" + Number].name;
@@ -22,11 +25,6 @@ else if(FruitsWeight * Quantity < 5) outputElement.textContent = FruitsName + ":
 else outputElement.textContent = FruitsName + ":" + Quantity + "こ！";
 =======
 
-if(FruitsWeight * Quantity < 1) outputElement.textContent = FruitsName + ":" + Quantity + "個分" + "  小人?";
-else if(FruitsWeight * Quantity < 2.5) outputElement.textContent = FruitsName + ":" + Quantity + "個分" + "  いい筋トレ道具だね";
-else if(FruitsWeight * Quantity < 3) outputElement.textContent = FruitsName + ":" + Quantity + "個分" + "  赤ちゃん?";
-else if(FruitsWeight * Quantity < 5) outputElement.textContent = FruitsName + ":" + Quantity + "個分" + "  赤ちゃん?";
-else outputElement.textContent = FruitsName + ":" + Quantity + "個分";
 
 >>>>>>> 07461ff115809b3ea50095804787e6c26180cd1b
 outputExplanation.textContent = FruitsExplanation;
