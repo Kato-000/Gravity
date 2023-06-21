@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', async function() {
     for(;;){
         for (; i < Quantity; i++) {
             createFallingImage();
-            await wait();
+            await wait(10);
             if(i > window.innerHeight + 200) {
                 break;
             }
